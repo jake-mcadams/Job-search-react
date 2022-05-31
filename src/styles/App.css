@@ -1,0 +1,26 @@
+header {
+  background-color: #5ea6a5;
+  background-image: url("/src/styles/images/bg-header-desktop.svg");
+  height: 156px;
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.search_conatainer {
+  width: 100%;
+  background: black;
+}
+
+#hello {
+  color: #7b8e8e;
+}
+
+body {
+  background: #effafa;
+  font-size: 1rem;
+}
+
+.app_cotainer {
+  margin: 0 auto;
+}
+/*# sourceMappingURL=App.css.map */

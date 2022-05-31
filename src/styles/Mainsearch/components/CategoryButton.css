@@ -1,0 +1,17 @@
+.category_button {
+  color: #5ba4a4;
+  background-color: #effafa;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  padding: .5em;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.category_button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #5ba4a4;
+}
+/*# sourceMappingURL=CategoryButton.css.map */

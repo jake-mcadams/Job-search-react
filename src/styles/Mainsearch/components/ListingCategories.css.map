@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,sBAAsB,CAAA;EAClB,OAAO,EAAE,IAAI;CAChB",
+    "sources": [
+        "ListingCategories.scss"
+    ],
+    "names": [],
+    "file": "ListingCategories.css"
+}

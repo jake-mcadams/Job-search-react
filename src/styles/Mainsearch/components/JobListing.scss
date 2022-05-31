@@ -1,0 +1,25 @@
+@import '../../utils/_variables';
+
+#listing__container{
+    padding: 1em 2em;
+    background: white;
+    width: 80%;
+    margin: auto auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container_right{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 50%;
+}
+
+.container_left{
+    flex: 50%;
+    align-self: center;
+    justify-self: self-end;
+    display: flex;
+    justify-content: flex-end;
+}

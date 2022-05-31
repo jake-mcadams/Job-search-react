@@ -1,0 +1,16 @@
+@import './utils/_variables';
+@import './shared/components/Navigation/MainHeader';
+@import './Mainsearch/pages/JobSearch';
+
+#hello{
+    color: $DarkGrayishCyan;
+}
+
+body{
+    background: $LightGrayishCyanBack;
+    font-size: 1rem;
+}
+
+.app_cotainer{
+    margin: 0 auto;
+}

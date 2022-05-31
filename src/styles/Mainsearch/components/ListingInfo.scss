@@ -1,0 +1,72 @@
+@import '../../utils/_variables';
+
+#info__container{
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+}
+
+
+#info__company{
+    color: $DesaturatedDarkCyan;
+}
+
+#info__new{
+    background-color: $DesaturatedDarkCyan;
+}
+
+#info__featured{
+    background-color: $VeryDarkGrayishCyan;
+}
+
+#info__title{
+    font-weight: 700;
+    font-size: 1.2em
+}
+
+#info__misc_list{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    // align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    li {
+        // &:nth-child(2){
+        //     list-style: circle;
+        //     color: red;
+        // }
+        &:not(:first-child){
+            list-style:square;
+        }
+    }
+}
+
+.listing__status{
+    padding: 0 .5em;
+    height: 1.8em;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    color: white;
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.listing__misc{
+    color: $DarkGrayishCyan;
+}
+
+.info__row{
+    display: flex;
+    flex-direction: row;
+    gap: .5em;
+    font-family: $fontFamilySpartan;
+    align-items: center;
+    // justify-content: space-between;
+    // &:last-child{
+    //     justify-content: space-between;
+    // }
+}

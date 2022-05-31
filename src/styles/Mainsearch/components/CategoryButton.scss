@@ -1,0 +1,20 @@
+@import '../../utils/_variables';
+
+
+.category_button{
+    color: $DesaturatedDarkCyan;
+    background-color: $LightGrayishCyanBack;
+    border: none;
+    font-family: $fontFamilyRubik;
+    font-weight: 500;
+    padding: .5em;
+    border-radius: 5px;
+    font-size: 1em;
+
+    &:hover{
+        cursor: pointer;
+        color: white;
+        background-color: $DesaturatedDarkCyan;
+
+    }
+}
