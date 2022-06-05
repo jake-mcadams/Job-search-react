@@ -26,6 +26,11 @@
   font-size: 1.2em;
 }
 
+#info__title:hover {
+  cursor: pointer;
+  color: #7b8e8e;
+}
+
 #info__misc_list {
   list-style-type: none;
   display: -webkit-box;

@@ -1,7 +1,7 @@
 @import '../../utils/_variables';
 
 #listing__container{
-    padding: 1em 2em;
+    padding: 1.5em 2.5em;
     background: white;
     width: 80%;
     margin: auto auto;
@@ -11,15 +11,15 @@
 
 .container_right{
     display: flex;
-    justify-content: space-around;
+    // justify-content: space-around;
     align-items: center;
     flex: 50%;
+    gap: 2em;
 }
 
 .container_left{
     flex: 50%;
     align-self: center;
-    justify-self: self-end;
     display: flex;
     justify-content: flex-end;
 }

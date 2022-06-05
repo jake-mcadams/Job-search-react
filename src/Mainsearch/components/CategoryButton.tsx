@@ -4,11 +4,12 @@ import '../../styles/Mainsearch/components/CategoryButton.css';
 
 type Props = {
     children: React.ReactNode;
+    id: string;
 }
 
 const CategoryButton =(props:Props)=>{
     return <>
-        <button className='category_button'>{props.children}</button>
+        <button id={props.id} className='category_button'>{props.children}</button>
     </>
 }
 

@@ -1,26 +1,23 @@
 import React, { FC } from "react";
 import "../../styles/Mainsearch/pages/JobSearch.css";
 import JobListing from "../components/JobListing";
-import axios from "axios";
+import { listingProps } from '../../shared/interfaces/interfaces'
 
-const JobSearch: FC = () => {
-
-  // const listingsFetch = async()=>{
-  //   try {
-  //     const resObj = await axios({
-  //       method: "get",
-  //       url: 'http://localhost:5500/'
-  //     }).then((data)=>{
-  //       console.log(data)
-  //     })
-  //   } catch(err:any){
-  //     console.log(err)
-  //   }
-  // }
-
+const JobSearch = () => {
   return (
     <div className="search_conatainer">
-      <JobListing ></JobListing>
+      {/* <JobListing company={props.company}
+        logo={props.logo}
+        new={props.new}
+        featured={props.featured}
+        position={props.position}
+        role={props.role}
+        level={props.level}
+        postedAt={props.postedAt}
+        contract={props.contract}
+        location={props.location}
+        languages={props.languages}
+        tools={props.tools}></JobListing> */}
     </div>
   );
 };

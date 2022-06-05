@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,kBAAkB,CAAA;EAEV,KAAK,EAAE,IAAI;EACX,UAAU,EAAE,KAAK;CACxB",
+    "mappings": "AAEA,AAAA,kBAAkB,CAAA;EAEV,KAAK,EAAE,IAAI;CAElB",
     "sources": [
         "JobSearch.scss",
         "../../utils/__variables.scss"
