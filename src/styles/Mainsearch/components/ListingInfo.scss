@@ -32,18 +32,14 @@
     list-style-type: none;
     display: flex;
     justify-content: space-between;
-    // align-items: flex-start;
     width: 100%;
     padding: 0;
     margin: 0;
 
     li {
-        // &:nth-child(2){
-        //     list-style: circle;
-        //     color: red;
-        // }
         &:not(:first-child){
-            list-style:square;
+            // list-style:square;
+            
         }
     }
 }
@@ -69,8 +65,5 @@
     gap: .5em;
     font-family: $fontFamilySpartan;
     align-items: center;
-    // justify-content: space-between;
-    // &:last-child{
-    //     justify-content: space-between;
-    // }
+
 }

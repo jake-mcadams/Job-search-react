@@ -2,18 +2,26 @@ import React, { FC } from "react";
 import CompanyAvatar from "./CompanyAvatar";
 import ListingInfo from "./ListingInfo";
 import ListCategories from "./ListingCategories";
-import '../../styles/Mainsearch/components/JobListing.css';
-import { listingProps } from '../../shared/interfaces/interfaces';
+import "../../styles/Mainsearch/components/JobListing.css";
+import { listingProps } from "../../shared/interfaces/interfaces";
 
-const JobListing = (props:listingProps) => {
+const JobListing = (props: listingProps) => {
   return (
     <div id="listing__container">
       <div className="container_right">
-        <CompanyAvatar></CompanyAvatar>
-        <ListingInfo></ListingInfo>
+        <CompanyAvatar logo={props.logo}></CompanyAvatar>
+        <ListingInfo
+          company={props.company}
+          new={props.new}
+          featured={props.featured}
+          position={props.position}
+          postedAt={props.postedAt}
+          contract={props.contract}
+          location={props.location}
+        ></ListingInfo>
       </div>
       <div className="container_left">
-        {/* <ListCategories></ListCategories> */}
+        <ListCategories tools={props.tools} languages={props.languages}></ListCategories>
       </div>
     </div>
   );

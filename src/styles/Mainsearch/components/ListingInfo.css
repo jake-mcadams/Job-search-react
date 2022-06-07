@@ -44,10 +44,6 @@
   margin: 0;
 }
 
-#info__misc_list li:not(:first-child) {
-  list-style: square;
-}
-
 .listing__status {
   padding: 0 .5em;
   height: 1.8em;

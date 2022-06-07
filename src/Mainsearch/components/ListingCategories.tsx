@@ -1,22 +1,28 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import CategoryButton from "./CategoryButton";
-import '../../styles/Mainsearch/components/ListingCategories.css';
-import { Categories } from '../../shared/interfaces/interfaces';
+import "../../styles/Mainsearch/components/ListingCategories.css";
+import { listingProps } from "../../shared/interfaces/interfaces";
 
-const ListCategories = (props: Categories) => {
-  const [items, setItems] = useState([])
-  // const categoriesItems: string[] = ["HTML", "CSS", "JavaScript"];
-  const categoriesItems = props.languages
+const ListCategories = (props: listingProps) => {
+ 
+    const categoriesHandler = (tools: string[] | undefined, languages:string[] | undefined) => {
+    const categoryItems: string[] = [];
+    tools?.forEach((tool:any) => {
+      categoryItems.push(tool);
+    });
+    languages?.forEach((language:any) => {
+      categoryItems.push(language);
+    });
+    console.log(categoryItems)
+  };
 
-  
-
-  // setItems(categoriesItems);
+  categoriesHandler(props.tools, props.languages)
 
   return (
     <div id="categories__container">
-      {items.map((item) => {
-        return <CategoryButton id={"1"}>{item}</CategoryButton>;
-      })}
+      {/* {items.map((item) => {
+        return <CategoryButton id={"1"}>{}</CategoryButton>;
+      })} */}
     </div>
   );
 };

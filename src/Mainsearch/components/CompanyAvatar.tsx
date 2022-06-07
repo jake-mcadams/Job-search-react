@@ -1,29 +1,13 @@
-import React, {FC} from 'react';
-import jobList from '../../data.json'
-import {ReactComponent as Logo } from '../../styles/images/photosnap.svg';
-import '../../styles/Mainsearch/components/JobListing.css';
+import React from "react";
+import "../../styles/Mainsearch/components/JobListing.css";
+import { listingProps } from "../../shared/interfaces/interfaces";
 
-const importReturn =(jobList:any)=>{
-    jobList.forEach((job: { company: string; logo: any; })=> {
-        // console.log(`${job.company}Avatar`)
-        // console.log(`import ${job.company.replace(/\s+/g, '')}Avatar from '${job.logo}'`)
-        return `import ${job.company.replace(/\s+/g, '')}Avatar from '${job.logo}'`
-    })
-}
-
-
-
-console.log(importReturn(jobList))
-
-const CompanyAvatar:FC=()=>{
-
-    return (
-        <>
-            
-                <Logo></Logo>
-            
-        </>
-    )
-}
+const CompanyAvatar = (props: listingProps) => {
+  return (
+    <>
+      <img src={`/images/${props.logo}`} alt="" />
+    </>
+  );
+};
 
 export default CompanyAvatar;
