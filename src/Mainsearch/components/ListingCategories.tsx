@@ -2,27 +2,34 @@ import React, { useState, useEffect } from "react";
 import CategoryButton from "./CategoryButton";
 import "../../styles/Mainsearch/components/ListingCategories.css";
 import { listingProps } from "../../shared/interfaces/interfaces";
+import { count } from "console";
+
+console.count("outside Listing Categories component");
 
 const ListCategories = (props: listingProps) => {
- 
-    const categoriesHandler = (tools: string[] | undefined, languages:string[] | undefined) => {
-    const categoryItems: string[] = [];
-    tools?.forEach((tool:any) => {
+  const categoryItems: string[] = [];
+  if (props.tools) {
+    props.tools?.forEach((tool) => {
       categoryItems.push(tool);
     });
-    languages?.forEach((language:any) => {
-      categoryItems.push(language);
+  }
+  if (props.languages) {
+    props.languages?.forEach((lang) => {
+      categoryItems.push(lang);
     });
-    console.log(categoryItems)
-  };
-
-  categoriesHandler(props.tools, props.languages)
+  }
+  // console.log(categoryItems)
+  console.count("inside Listing Categories component");
 
   return (
     <div id="categories__container">
-      {/* {items.map((item) => {
-        return <CategoryButton id={"1"}>{}</CategoryButton>;
-      })} */}
+      {categoryItems.map((items) => {
+        return (
+          <CategoryButton key={props.id} id={props.id!.toString()}>
+            {items}
+          </CategoryButton>
+        );
+      })}
     </div>
   );
 };

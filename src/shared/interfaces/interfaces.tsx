@@ -1,5 +1,6 @@
 interface listingProps {
-    [id: number]: number;
+    // [id: number]: number;
+    readonly id?: number;
     company?: string;
     logo?: string;
     new?: boolean;
@@ -13,5 +14,7 @@ interface listingProps {
     languages?: string[];
     tools?: string[];
   }
+
+
 
 export type { listingProps};

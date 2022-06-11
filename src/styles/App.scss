@@ -2,6 +2,18 @@
 @import './shared/components/Navigation/MainHeader';
 @import './Mainsearch/pages/JobSearch';
 
+header {
+    background-color: #5ea6a5;
+    background-image: url("./images/bg-header-desktop.svg");
+    height: 156px;
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+
+  .search_conatainer {
+    width: 100%;
+  }
+
 #hello{
     color: $DarkGrayishCyan;
 }

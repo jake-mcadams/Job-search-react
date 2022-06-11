@@ -19,7 +19,7 @@
     background-color: $VeryDarkGrayishCyan;
 }
 
-#info__title{
+#info__position{
     font-weight: 700;
     font-size: 1.2em;
     &:hover{
@@ -27,6 +27,7 @@
         color: $DarkGrayishCyan;
     }
 }
+
 
 #info__misc_list{
     list-style-type: none;

@@ -1,7 +1,9 @@
-@import '../../utils/_variables';
+@import "../../utils/_variables";
 
-.search_conatainer{
-        // margin: 0 auto;
-        width: 100%;
-        // background: black;
+.main_conatainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em;
+  position: relative;
 }

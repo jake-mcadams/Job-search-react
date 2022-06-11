@@ -9,6 +9,9 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 5px #7b8e8e;
+          box-shadow: 0 5px 5px #7b8e8e;
 }
 
 .container_right {
@@ -18,16 +21,16 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-flex: 60%;
-      -ms-flex: 60%;
-          flex: 60%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   gap: 2em;
 }
 
 .container_left {
-  -webkit-box-flex: 40%;
-      -ms-flex: 40%;
-          flex: 40%;
+  -webkit-box-flex: 50%;
+      -ms-flex: 50%;
+          flex: 50%;
   -ms-flex-item-align: center;
       align-self: center;
   display: -webkit-box;

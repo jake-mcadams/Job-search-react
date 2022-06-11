@@ -21,12 +21,12 @@
   background-color: #2c3a3a;
 }
 
-#info__title {
+#info__position {
   font-weight: 700;
   font-size: 1.2em;
 }
 
-#info__title:hover {
+#info__position:hover {
   cursor: pointer;
   color: #7b8e8e;
 }

@@ -1,0 +1,12 @@
+@import '../../utils/_variables';
+.search__container{
+    padding: 1.5em 2.5em;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px $DarkGrayishCyan;
+    width: 80%;
+    top: -5.5rem;
+    left:50%;
+    position: absolute;
+    transform: translate(-50%);
+}
