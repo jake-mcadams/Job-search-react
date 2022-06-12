@@ -3,10 +3,10 @@ import MainHeader from "./shared/components/Navigation/MainHeader";
 import JobSearch from "./Mainsearch/pages/JobSearch";
 import ListingSearch from "./Mainsearch/components/ListingSearch";
 
-console.count("outside App component");
+// console.count("outside App component");
 
 const App = () => {
-  console.count("inside App component");
+  // console.count("inside App component");
   return (
     <>
       <MainHeader />

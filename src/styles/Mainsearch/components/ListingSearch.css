@@ -1,14 +1,33 @@
 .search__container {
-  padding: 1.5em 2.5em;
+  padding: .5em .5em;
   background: white;
   border-radius: 5px;
   -webkit-box-shadow: 0 5px 5px #7b8e8e;
           box-shadow: 0 5px 5px #7b8e8e;
   width: 80%;
+  height: 2.5rem;
   top: -5.5rem;
   left: 50%;
   position: absolute;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.search__clear {
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+  color: #5ba4a4;
+  margin-left: auto;
+}
+
+.search__clear:hover {
+  cursor: pointer;
+  border-bottom: 2px solid #7b8e8e;
 }
 /*# sourceMappingURL=ListingSearch.css.map */

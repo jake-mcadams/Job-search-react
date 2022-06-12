@@ -1,6 +1,8 @@
-interface listingProps {
+import { Dispatch, SetStateAction } from "react";
+
+interface listingProps extends searchProps{
     // [id: number]: number;
-    readonly id?: number;
+    readonly id?: string;
     company?: string;
     logo?: string;
     new?: boolean;
@@ -13,8 +15,16 @@ interface listingProps {
     location?: string;
     languages?: string[];
     tools?: string[];
+    children?: React.ReactNode;
   }
 
+interface searchProps {
+  filter?: string[],
+  toggleFilter?: Dispatch<SetStateAction<string[] >>;
+  clearFilter?: () => any;
+  updateFilter?: (params: string[]) =>any;
+}
 
 
-export type { listingProps};
+
+export type { listingProps, searchProps };

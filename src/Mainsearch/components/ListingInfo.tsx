@@ -2,10 +2,10 @@ import React from "react";
 import "../../styles/Mainsearch/components/ListingInfo.css";
 import { listingProps } from "../../shared/interfaces/interfaces";
 
-console.count("outside Listings Info component");
+// console.count("outside Listings Info component");
 
 const ListingInfo = (props: listingProps) => {
-  console.count("inside Listings Info component");
+  // console.count("inside Listings Info component");
 
   return (
     <div id="info__container">

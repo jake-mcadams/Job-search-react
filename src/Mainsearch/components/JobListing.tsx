@@ -5,10 +5,10 @@ import ListCategories from "./ListingCategories";
 import "../../styles/Mainsearch/components/JobListing.css";
 import { listingProps } from "../../shared/interfaces/interfaces";
 
-console.count("outside Job Listings component");
+// console.count("outside Job Listings component");
 
 const JobListing = (props: listingProps) => {
-  console.count("inside Job Listings component");
+  // console.count("inside Job Listings component");
   return (
     <div id="listing__container">
       <div className="container_right">
@@ -28,6 +28,7 @@ const JobListing = (props: listingProps) => {
           tools={props.tools}
           languages={props.languages}
           id={props.id}
+          updateFilter={props.updateFilter}
         ></ListCategories>
       </div>
     </div>

@@ -6,7 +6,7 @@ header {
   margin-bottom: 4rem;
 }
 
-.search_conatainer {
+.main_conatainer {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16,6 +16,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 1.5em;
+  position: relative;
 }
 
 header {
